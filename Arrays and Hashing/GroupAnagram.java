@@ -1,3 +1,20 @@
+//Problem: Group Anagram
+/*
+ * INPUT: ["eat","tea","tan","ate","nat","bat"]
+ *       
+ * OUTPUT: [["bat"],["nat","tan"],["ate","eat","tea"]]
+ */
+/*
+ * Approach 1 - Brute force approach
+ * Time Complexity - O(n * klogk) - n is number of string and k is max length of string
+ * Space Complexity - O(n * m) - n is number of Strings and m is the number of unique anagram groups
+ */
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
 class GroupAnagram {
     public List<List<String>> groupAnagrams(String[] strs) {
         
