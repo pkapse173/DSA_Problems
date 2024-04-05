@@ -50,6 +50,3 @@ public class EvaluateReversePolish {
         return st.pop(); //Final answer
     }
 }
-
-    
-}
