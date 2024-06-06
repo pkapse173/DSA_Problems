@@ -6,7 +6,7 @@
  */
 
 /*
- * Approach - By BFS method
+ * Approach 1 - By BFS method
  * Time Complexity - O(n) - n is number of nodes in binary tree
  * Space Complexity - O(n) - Space used by queue
  */
@@ -37,5 +37,23 @@ public class SameBinaryTree {
                 queue2.add(node2.right);      
         }
         return true;
+    }
+}
+
+/*
+ * Approach 2 - Recursive method
+ * Time Complexity - O(n) - n is number of nodes in the trees.
+ * Space Complexity - O(n) 
+ */
+
+ class SameBinaryTree {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+      if( p == null && q == null) 
+      return true;
+
+      if(p == null || q == null || p.val != q.val) 
+      return false;
+
+      return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }
