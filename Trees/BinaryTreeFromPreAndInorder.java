@@ -1,3 +1,13 @@
+//Problem: Construct Binary Tree from Preorder and Inorder Traversal
+/*
+ * INPUT: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]
+ *       
+ * OUTPUT: [3,9,20,null,null,15,7]
+/*
+ * Approach - Using HashMap and Iterating over preOrder array
+ * Time Complexity - O(n) - n is number elements in preoder array
+ * Space Complexity - O(n) - Space used by HashMap to store indexes of inorder elements
+ */
 package Trees;
 
 import javax.swing.tree.TreeNode;
