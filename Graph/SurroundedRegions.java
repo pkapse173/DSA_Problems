@@ -1,15 +1,17 @@
-//Problem: Surrounded Regions
+//Problem: Word Ladder
 /*
- * Input: board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
+ * Input: beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
  *       
- * OUTPUT: [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
+ * OUTPUT: 5
  * 
+ * Explanation: One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog", 
+ * which is 5 words long.
  */
 
 /*
- * Approach - DFS by checking border
- * Time Complexity  - O(m * n):m is the number of rows and n is the number of columns 
- * Space Complexity - O(m * n): due to recursive stack
+ * Approach - BFS appraoch with Set
+ * Time Complexity  - O(N * L) N is number of words in wordList and L is length of each word
+ * Space Complexity - O(L * E) N is number pf words in wordList and L is length of each word
  */
 package Graph;
 
